@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M3 6h18v2H3V6zm2 3h14v13H5V9zm3 2v9h2v-9H8zm4 0v9h2v-9h-2zm-3-8h6v2H9V3z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Find a Bin - 서울 안국·서촌 스마트 쓰레기통 내비 & AI 가이드</title>
+    <meta name="description" content="서울 안국과 서촌 지역의 관광객과 거주자를 위한 스마트 쓰레기통 내비게이션 및 AI 배출 가이드. 서울 실시간 도시데이터 혼잡도 회피 및 공공 가로휴지통 위치 안내." />
+    <!-- Leaflet CSS for OpenStreetMap fallback & base map engine -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <!-- Kakao Maps SDK (테스트용 샘플 키 설정 / 사용자 키 발급 시 appkey 파라미터 교체) -->
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=TEST_KAKAO_MAP_KEY&libraries=services,clusterer"></script> -->
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  </head>
+  <body class="bg-slate-900 text-slate-100 antialiased selection:bg-brand-500 selection:text-white overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
