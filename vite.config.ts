@@ -1,14 +1,14 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
-import { viteSingleFile } from 'vite-plugin-singlefile'
 
-// 단일 HTML 파일 빌드: Finder에서 더블클릭하면 바로 열림 (서버 불필요)
+// Vercel 배포용 표준 빌드 설정
+// 로컬 단일 파일 빌드가 필요하다면:
+//   import { viteSingleFile } from 'vite-plugin-singlefile'
+//   plugins: [react(), viteSingleFile()],
+//   build: { assetsInlineLimit: 100_000_000, cssCodeSplit: false, outDir: 'dist-standalone' }
 export default defineConfig({
-  plugins: [react(), viteSingleFile()],
+  plugins: [react()],
   build: {
-    // 모든 에셋을 HTML에 인라인
-    assetsInlineLimit: 100_000_000,
-    cssCodeSplit: false,
-    outDir: 'dist-standalone',
+    outDir: 'dist',
   },
 })
