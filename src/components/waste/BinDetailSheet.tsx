@@ -117,7 +117,7 @@ export const BinDetailSheet: React.FC<BinDetailSheetProps> = ({
         <div className="mt-3">
           <p className="text-[11px] font-medium text-slate-400 mb-1.5">버릴 수 있는 품목:</p>
           <div className="flex flex-wrap gap-1.5">
-            {bin.acceptedCategories.map((cat) => {
+            {bin.acceptedCategories.map((cat: string) => {
               const meta = CATEGORY_NAMES[cat] || {
                 label: cat,
                 bg: 'bg-slate-700 text-slate-200',
